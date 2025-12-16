@@ -519,7 +519,6 @@ img {
 }
 
 .hero-btn {
-    display: inline-block;
     padding: 1rem 2rem;
     background: transparent;
     color: var(--white);
@@ -533,6 +532,11 @@ img {
     overflow: hidden;
     transition: var(--transition);
     margin-top: 1.5rem;
+    min-width: 200px;
+    display: flex;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
 }
 
 .hero-btn:before {
@@ -738,7 +742,7 @@ textarea.form-control {
 
 /* ===== FOOTER ===== */
 .footer {
-    background: var(--gray-dark);
+    background: var(--black);
     padding: 3rem var(--mobile-padding) 1.5rem;
     border-top: 1px solid var(--gray-light);
 }
@@ -750,9 +754,6 @@ textarea.form-control {
 
 .copyright {
     text-align: center;
-    padding-top: 2rem;
-    margin-top: 2rem;
-    border-top: 1px solid var(--gray-light);
     color: #aaa;
     font-size: 0.9rem;
     line-height: 1.5;
@@ -933,4 +934,35 @@ textarea.form-control {
     .contact-item-card:hover {
         transform: none;
     }
+}
+
+.map {
+    margin: 0 auto;
+    width: fit-content;
+    max-width: 500px;
+    aspect-ratio: 622 / 982;
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+    
+}
+
+.map img {
+}
+
+.map a {
+    position: absolute;
+    bottom: 30%;
+    border-radius: 4px;
+    text-decoration: none;
+    right: 1rem;
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    transition: .3s ease;
+}
+
+.map a:hover {
+    background-color: white;
+    color: black;
 }
