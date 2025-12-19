@@ -878,6 +878,10 @@ textarea.form-control {
     .footer-container {
         max-width: 1400px;
     }
+
+    .services-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 /* Mobile Navigation */
@@ -944,7 +948,6 @@ textarea.form-control {
     overflow: hidden;
     border-radius: 10px;
     position: relative;
-    
 }
 
 .map img {
